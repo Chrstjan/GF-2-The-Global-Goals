@@ -2,9 +2,13 @@
 .goal-images,
 .problems,
 .contact-us {
-    margin: 0;
     font-family: "roboto condensed", sans-serif;
     background: var( --accent-color);
+    padding-bottom: 1.5rem;
+}
+
+section article {
+    padding-bottom: 1rem;
 }
 
 .world-goals,
@@ -23,6 +27,7 @@
 header h2,
 header h3 {
     color: #6699cc;
+    margin: 0;
 }
 
 .world-goals header .back-btn,
@@ -57,16 +62,23 @@ header h3 {
 .images img {
     width: 100%;
     object-fit: contain;
+    display: block;
 }
 
 .problems .problems-Card img {
     width: 100%;
     object-fit: contain;
+    display: block;
+}
+
+.problems-Card figure{
+    padding-bottom: 1rem;
 }
 
 .contact-us .un-image img {
     width: 100%;
     object-fit: contain;
+    display: block;
 }
 
 .form-container form {
