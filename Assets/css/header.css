@@ -1,0 +1,41 @@
+.main-header {
+    background: var(--dark);
+    font-family: "roboto condensed", sans-serif;
+}
+
+.main-nav .header-image {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav .header-image img {
+    width: 30vw;
+    object-fit: contain;
+    display: block;
+}
+
+.header-image figcaption h1 {
+    color: #fff;
+}
+
+.header-image figcaption h3 {
+    color: var(--lightblue);
+}
+
+.main-nav ul {
+    padding: 0;
+}
+
+.main-nav ul li {
+    list-style-type: none;
+    border-bottom: 4px solid #000;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}

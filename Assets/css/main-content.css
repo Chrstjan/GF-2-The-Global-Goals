@@ -1,0 +1,118 @@
+.seventeen-goals,
+.goal-images,
+.problems,
+.contact-us {
+    margin: 0;
+    font-family: "roboto condensed", sans-serif;
+    background: var( --accent-color);
+}
+
+.world-goals,
+.goal-images,
+.problems,
+.contact-us {
+    padding-left: 0.4rem;
+}
+
+.world-goals header,
+.problems header,
+.contact-us header {
+    position: relative
+}
+
+header h2,
+header h3 {
+    color: #6699cc;
+}
+
+.world-goals header .back-btn,
+.problems header .back-btn,
+.contact-us header .back-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.world-goals .back-btn a {
+    color: #666;
+    font-weight: 100;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: dashed;
+}
+
+.problems .back-btn a,
+.contact-us .back-btn a {
+    color: var(--dark);
+    font-weight: 100;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: dashed;
+}
+
+.goal-images .images {
+    padding: 0;
+}
+
+.images img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.problems .problems-Card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.contact-us .un-image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+.contact-us .form-container form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0;
+}
+
+form fieldset input {
+    padding: 0.3rem 7rem;
+}
+
+form fieldset textarea {
+    resize: none;
+    padding: 0.3rem 7rem;
+}
+
+form fieldset input::placeholder,
+form fieldset textarea::placeholder {
+    text-align: center;
+}
+
+form fieldset .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.btn-container input {
+    padding: 0.5rem 5rem;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-container input[type="reset"] {
+    background: var(--lightblue);
+}
+
+.btn-container input[type="submit"] {
+    background: var(--darkblue);
+}
