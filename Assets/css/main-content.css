@@ -57,6 +57,9 @@ header h3 {
 
 .goal-images .images {
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.7rem;
 }
 
 .images img {
@@ -79,10 +82,6 @@ header h3 {
     width: 100%;
     object-fit: contain;
     display: block;
-}
-
-.form-container form {
-    width: 100%;
 }
 
 .contact-us .form-container form fieldset {
@@ -127,4 +126,74 @@ form fieldset .btn-container {
 
 .btn-container input[type="submit"] {
     background: var(--darkblue);
+}
+
+@media (min-width: 1300px) {
+    .seventeen-goals,
+    .goal-images {
+        padding-left: 1rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .seventeen-goals .goals-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .world-goals header .back-btn {
+        right: 12%;
+    }
+
+    .goal-images .images {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;
+    }
+
+    .problems {
+        padding-top: 1rem;
+    }
+
+    .problems header .back-btn {
+        right: 52%;
+    }
+
+    .problems .problems-Card {
+        padding-top: 1rem;
+    }
+
+    .problems-Card figure {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .contact-us .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .form-container form fieldset {
+        width: 100%;
+    }
+
+    form fieldset input {
+        padding: 1rem 12rem;
+        width: 100%;
+    }
+
+    form fieldset textarea {
+        padding: 1rem 12rem;
+    }
+
+    .btn-container input {
+        padding: 1rem 7.2rem;
+    }
+
+    .contact-container .un-image img {
+        width: 70%;
+    }
 }

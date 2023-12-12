@@ -39,3 +39,15 @@
     text-decoration: none;
     color: #fff;
 }
+
+@media (min-width: 1300px) {
+    .main-nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        border-bottom: 0;
+    }
+}

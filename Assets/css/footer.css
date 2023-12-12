@@ -32,3 +32,35 @@
     width: 100%;
     object-fit: contain;
 }
+
+@media (min-width: 1300px) {
+    .main-footer {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding-top: 1.4rem;
+        height: 43vh;
+    }
+
+    .main-footer .links {
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .links header {
+        padding-left: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-footer .resources .pdf-text {
+        left: 102%;
+    }
+    
+    .main-footer figure img {
+        height: 38vh;
+        width: 50vw;
+    }
+}
