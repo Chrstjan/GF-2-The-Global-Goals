@@ -68,6 +68,11 @@ header h3 {
     object-fit: contain;
     display: block;
     cursor: pointer;
+    filter: grayscale();
+}
+
+.images img:hover {
+    filter: contrast(100%);
 }
 
 .images .modal-figure {
