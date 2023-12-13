@@ -12,8 +12,23 @@ const createGallery = () => {
         figureImage.src = figureImageSrc;
 
         imagesFigure.appendChild(figureImage);
-    })
-} 
+
+        const makeImageModal = () => {
+            const modalFigure = document.createElement("figure");
+            modalFigure.classList.add("modal-figure");
+
+            const modalImage = figureImage.cloneNode(true);
+            modalFigure.appendChild(modalImage);
+            imagesFigure.appendChild(modalFigure);
+
+            modalFigure.addEventListener("click", () => {
+                modalFigure.remove();
+            });
+        };
+
+        figureImage.addEventListener("click", makeImageModal);
+    });
+};
 
 window.addEventListener("load", () => {
     createGallery();

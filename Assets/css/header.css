@@ -1,26 +1,26 @@
 .main-header {
     background: var(--dark);
     font-family: "roboto condensed", sans-serif;
+    position: relative;
 }
 
-.main-nav .header-image {
-    width: 40vw;
+.main-header .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-nav .header-image img {
+.main-header .header-image img {
     width: 30vw;
     object-fit: contain;
     display: block;
 }
 
-.header-image figcaption h1 {
+.header-container hgroup h1 {
     color: #fff;
 }
 
-.header-image figcaption h3 {
+.header-container header h3 {
     color: var(--lightblue);
 }
 
@@ -42,6 +42,15 @@
 
 /* Tablet */
 @media (min-width: 800px) {
+
+    .main-header .header-container {
+        justify-content: space-evenly;
+    }
+
+    .main-header .header-image img {
+        width: 20vw;
+    }
+
     .main-nav ul {
         display: flex;
         justify-content: center;
@@ -55,6 +64,15 @@
 
 /* Desktop */
 @media (min-width: 1300px) {
+
+    .main-header .header-container {
+        justify-content: center;
+    }
+
+    .main-header .header-image img {
+        width: 10vw;
+    }
+
     .main-nav ul {
         display: flex;
         justify-content: flex-end;
