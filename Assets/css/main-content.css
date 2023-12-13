@@ -89,6 +89,7 @@ header h3 {
     width: 100%;
     object-fit: contain;
     display: block;
+    filter: contrast(100%);
 }
 
 .problems .problems-Card img {
