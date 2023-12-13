@@ -16,6 +16,7 @@ section article {
 .problems,
 .contact-us {
     padding-left: 0.4rem;
+    padding-right: 0.4rem;
 }
 
 .world-goals header,
@@ -108,6 +109,10 @@ header h3 {
     display: block;
 }
 
+.form-container {
+    width: 100%;
+}
+
 .contact-us .form-container form fieldset {
     display: flex;
     flex-direction: column;
@@ -117,12 +122,14 @@ header h3 {
 }
 
 form fieldset input {
-    padding: 0.3rem 7rem;
+    padding: 0.3rem;
+    width: 100%;
 }
 
 form fieldset textarea {
     resize: none;
-    padding: 0.3rem 7rem;
+    padding: 0.3rem;
+    width: 100%;
 }
 
 form fieldset input::placeholder,
@@ -138,7 +145,8 @@ form fieldset .btn-container {
 }
 
 .btn-container input {
-    padding: 0.5rem 5rem;
+    padding: 0.5rem;
+    width: 100%;
     color: #fff;
     border: 0;
     cursor: pointer;

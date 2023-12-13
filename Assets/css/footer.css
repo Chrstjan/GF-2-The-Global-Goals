@@ -1,6 +1,7 @@
 .main-footer {
     background: var(--dark);
     padding-left: 0.4rem;
+    padding-right: 0.4rem;
 }
 
 .links ul {
