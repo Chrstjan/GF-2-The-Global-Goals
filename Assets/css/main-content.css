@@ -128,6 +128,19 @@ form fieldset .btn-container {
     background: var(--darkblue);
 }
 
+@media (min-width: 800px) {
+    .goal-images .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .contact-us .contact-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (min-width: 1300px) {
     .seventeen-goals,
     .goal-images {

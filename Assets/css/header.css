@@ -40,6 +40,20 @@
     color: #fff;
 }
 
+/* Tablet */
+@media (min-width: 800px) {
+    .main-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        border-bottom: 0;
+    }
+}
+
+/* Desktop */
 @media (min-width: 1300px) {
     .main-nav ul {
         display: flex;

@@ -1,5 +1,10 @@
 .main-footer {
     background: var(--dark);
+    padding-left: 0.4rem;
+}
+
+.links ul {
+    padding: 0;
 }
 
 .main-footer .links ul li {
@@ -9,6 +14,10 @@
 .main-footer .links ul li a {
     text-decoration: none;
     color: #eee;
+}
+
+.main-footer .resources {
+    padding-top: 1rem;
 }
 
 .main-footer .resources p {
@@ -28,16 +37,52 @@
     cursor: pointer;
 }
 
+.main-footer figure {
+    padding-top: 1rem;
+}
+
 .main-footer figure img {
     width: 100%;
     object-fit: contain;
 }
 
+/* Tablt */
+@media (min-width: 800px) {
+
+    .main-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .links {
+        padding-top: 1rem;
+    }
+
+    .links ul {
+        padding: 0;
+    }
+
+    .resources {
+        padding-top: 1rem;
+    }
+
+    .resources .pdf-text {
+        left: 100%;
+    }
+
+    .main-footer figure {
+        width: 100%;
+    }
+
+    .main-footer figure img {
+        height: 30vh;
+    }
+}
+
+/* Desktop */
 @media (min-width: 1300px) {
     .main-footer {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
